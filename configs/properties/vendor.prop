@@ -134,6 +134,9 @@ ro.vendor.mgk_name=mgk_64_entry_level_k510
 ro.vendor.mtk_widevine_drm_l1_support=1
 ro.vendor.mtk_prefer_64bit_proc=0
 
+# MTE
+arm64.memtag.process.system_server=off
+
 # Neural Networks
 debug.mtk_tflite.target_nnapi=29
 ro.vendor.mtk_nn.option=A,B,C,D,E,F,G,Z
