@@ -21,6 +21,7 @@ ro.vendor.bluetooth.bt_multidevice_perform=600
 ro.vendor.bt.platform=connac1x
 ro.vendor.mtk.bt_sap_enable=true
 vendor.bluetooth.ldac.abr=true
+bluetooth.hci.erroneous_data_reporting.enabled=false
 
 # Camera
 camera.disable_zsl_mode=1
