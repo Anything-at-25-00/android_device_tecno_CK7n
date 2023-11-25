@@ -16,6 +16,7 @@ ro.vendor.mtk_audio_tuning_tool_ver=V1
 ro.vendor.mtk_hifiaudio_support=1
 
 # Bluetooth
+bluetooth.device.class_of_device=90,2,12
 ro.vendor.bluetooth.a2dp_aac_vbr.is_disabled=true
 ro.vendor.bluetooth.bt_multidevice_perform=600
 ro.vendor.bt.platform=connac1x
