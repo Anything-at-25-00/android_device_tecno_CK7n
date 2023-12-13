@@ -310,6 +310,10 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.millennium
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb-service.transsion
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     wpa_supplicant \
