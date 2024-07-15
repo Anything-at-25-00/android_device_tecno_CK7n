@@ -99,6 +99,7 @@ ro.vendor.mtk_aal_support=1
 debug.mediatek.disp_decompress=1
 ro.vendor.smvr.p2batch.vga=8
 ro.vendor.smvr.p2batch.hd=4
+debug.sf.enable_egl_image_tracker=0
 
 # Enable virtual A/B compression
 ro.virtual_ab.compression.threads=true
