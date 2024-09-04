@@ -224,6 +224,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     FrameworkResOverlayPyroath \
+    SettingsResOverlayPyroath \
     SystemUIResOverlayPyroath \
     TetheringResOverlayPyroath \
     WifiResOverlayPyroath
