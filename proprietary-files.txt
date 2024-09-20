@@ -24,6 +24,7 @@ vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
 vendor/lib/libbwc.so
 vendor/lib64/hw/audio.primary.mediatek.so;SYMLINK=vendor/lib64/hw/audio.primary.mt6789.so
 vendor/lib64/hw/audio.r_submix.mediatek.so;SYMLINK=vendor/lib64/hw/audio.r_submix.mt6789.so
+vendor/lib64/libalsautils.so:vendor/lib64/libalsautils-v31.so;FIX_SONAME
 vendor/lib64/libMtkSpeechEnh.so
 vendor/lib64/libTransNS.so
 vendor/lib64/lib_iir.so
