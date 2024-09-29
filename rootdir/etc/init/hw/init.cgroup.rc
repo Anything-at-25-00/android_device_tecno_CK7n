@@ -24,12 +24,12 @@ on charger
 
 on property:vendor.all.modules.ready=1
     write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor "schedutil"
-    write /sys/devices/system/cpu/cpufreq/policy0/sugov_ext/up_rate_limit_us 500
-    write /sys/devices/system/cpu/cpufreq/policy0/sugov_ext/down_rate_limit_us 1000
+    write /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us 500
+    write /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us 1000
 
     write /sys/devices/system/cpu/cpufreq/policy6/scaling_governor "schedutil"
-    write /sys/devices/system/cpu/cpufreq/policy6/sugov_ext/up_rate_limit_us 500
-    write /sys/devices/system/cpu/cpufreq/policy6/sugov_ext/down_rate_limit_us 1000
+    write /sys/devices/system/cpu/cpufreq/policy6/schedutil/up_rate_limit_us 500
+    write /sys/devices/system/cpu/cpufreq/policy6/schedutil/down_rate_limit_us 1000
 
 on init
     # Set PELT multiplier to 2, which is equivalent to a 16ms half-life.
