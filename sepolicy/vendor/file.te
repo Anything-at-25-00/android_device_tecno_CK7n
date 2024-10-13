@@ -21,6 +21,7 @@ type proc_gesture_state, fs_type, proc_type, sysfs_type;
 
 # OTG
 type sysfs_OTG_STATE_file, fs_type, sysfs_type;
+type sysfs_OTG_CTL_file, fs_type, sysfs_type;
 
 # Torch
 type sysfs_sub_torch_file, fs_type, sysfs_type;
