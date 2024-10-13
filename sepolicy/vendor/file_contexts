@@ -3,6 +3,7 @@
 /dev/cwvi5300                                                                           u:object_r:cwvi5300_device:s0
 /data/vendor/anc_yuvnight/working_dir(/.*)?                                             u:object_r:vendor_megvii_data_file:s0
 /data/vendor/arcsoft(/.*)?                                                              u:object_r:vendor_arcsoft_data_file:s0
+/data/vendor/camera(/.*)?                                                               u:object_r:transsion_camera_data_file:s0
 /data/vendor/camera_watermark(/.*)?                                                     u:object_r:vendor_watermark_data_file:s0
 /data/vendor/multicam(/.*)?                                                             u:object_r:transsion_camera_data_file:s0
 
