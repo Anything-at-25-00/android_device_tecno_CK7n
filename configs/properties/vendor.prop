@@ -113,6 +113,8 @@ ro.vendor.mtk_log_hide_gps=1
 
 # HWUI
 debug.hwui.skia_atrace_enabled=false
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
 
 # IMS
 persist.vendor.mtk.volte.enable=1
