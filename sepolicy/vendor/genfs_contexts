@@ -125,6 +125,20 @@ genfscon sysfs /devices/platform/soc/1f800000.mmlsys_config/wakeup u:object_r:sy
 genfscon sysfs /devices/virtual/input/input2/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/power_supply/mtk-gauge/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/mtk_ctd/power_supply/mtk_charger_type/wakeup22 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/pe5/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11015000.i2c/i2c-3/3-0028/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/10228000.gce/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1a000000.camisp_legacy/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11017000.i2c/i2c-5/5-0053/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11017000.i2c/i2c-5/5-0066/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/10026000.pwrap/10026000.pwrap:mt6366/mt6358-rtc/rtc/rtc0/alarmtimer.1.auto/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11e00000.i2c/i2c-0/0-0038/input/input4/wakeup161                          u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11017000.i2c/i2c-5/5-0055/wakeup/wakeup33                                 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11017000.i2c/i2c-5/5-0053/wakeup/wakeup13                                 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/1101a000.i2c/i2c-6/6-004e/wakeup/wakeup21                                 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/10026000.pwrap/10026000.pwrap:mt6366/mt635x-auxadc/wakeup/wakeup6         u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/10026000.pwrap/10026000.pwrap:mt6366/mt6358-rtc/wakeup/wakeup11           u:object_r:sysfs_wakeup:s0
+
 
 # Torch
 genfscon sysfs /devices/virtual/sub_torch/sub_torch/sub_torch_level                                 u:object_r:sysfs_sub_torch_file:s0
