@@ -4,4 +4,3 @@ dontaudit {
 } shell_data_file:dir search;
 
 dontaudit ueventd tranfs_block_device:blk_file rw_file_perms;
-dontaudit audioserver vendor_audio_prop:file read;
