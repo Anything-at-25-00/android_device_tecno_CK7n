@@ -209,6 +209,10 @@ PRODUCT_PACKAGES += \
     android.hardware.security.sharedsecret-V1-ndk_platform.vendor:64 \
     libcppbor_external.vendor:64
 
+# Linker
+PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
+    $(LOCAL_PATH)/configs/linker.config.json
+
 # Media
 PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.0.vendor:64 \
