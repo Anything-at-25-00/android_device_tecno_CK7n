@@ -45,6 +45,7 @@ on init
     write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/top-app/cpus 0-7
 
+on boot
     # boot perf. tune
     write /dev/cpuctl/system/cpu.uclamp.min 100
     write /dev/cpuctl/system/cpu.uclamp.latency_sensitive 1
@@ -85,6 +86,7 @@ on enable-low-power
     write /dev/cpuctl/top-app/cpu.uclamp.max max
     write /dev/cpuctl/top-app/cpu.uclamp.min 10
     write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 1
+
     # background
     # cap the max utilisation for background tasks to save power.
     write /dev/cpuctl/background/cpu.uclamp.max 50
@@ -95,6 +97,7 @@ on enable-low-power
     write /dev/cpuctl/nnapi-hal/cpu.uclamp.max max
     write /dev/cpuctl/nnapi-hal/cpu.uclamp.min 75
     write /dev/cpuctl/nnapi-hal/cpu.uclamp.latency_sensitive 1
+    
     # camera-daemon
     write /dev/cpuctl/camera-daemon/cpu.uclamp.max max
     write /dev/cpuctl/camera-daemon/cpu.uclamp.min 50
