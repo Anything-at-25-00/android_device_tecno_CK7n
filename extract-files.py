@@ -14,6 +14,13 @@ from extract_utils.main import (
     ExtractUtilsModule,
 )
 
+namespace_imports = [
+    'device/tecno/LH7n',
+    'hardware/mediatek',
+    'hardware/mediatek/libmtkperf_client',
+    'hardware/millennium',
+]
+
 blob_fixups: blob_fixups_user_type = {
     ('vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service', 'vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so'): blob_fixup()
         .replace_needed('libhidlbase.so', 'libhidlbase-v32.so')
@@ -41,6 +48,7 @@ module = ExtractUtilsModule(
     'CK7n',
     'tecno',
     blob_fixups=blob_fixups,
+    namespace_imports=namespace_imports,
 )
 
 if __name__ == '__main__':
