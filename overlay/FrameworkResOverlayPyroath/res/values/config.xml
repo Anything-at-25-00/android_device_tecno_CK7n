@@ -97,4 +97,7 @@
         <item>"/system/bin/surfaceflinger"</item>
         <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
     </string-array>
+
+    <!-- Wifi driver supports WPA3 Simultaneous Authentication of Equals (WPA3-SAE) for softap -->
+    <bool translatable="false" name="config_wifi_softap_sae_supported">true</bool>
 </resources>
