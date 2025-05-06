@@ -225,6 +225,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     FrameworkResOverlayPyroath \
     SystemUIResOverlayPyroath \
+    TetheringResOverlayPyroath \
     WifiResOverlayPyroath
 
 # Lights
