@@ -52,6 +52,7 @@ vendor.camera.mdp.dre.enable=1
 vendor.mtk.camera.app.fd.video=1
 
 # Display
+ro.surface_flinger.uclamp.min=130
 ro.hardware.egl=meow
 ro.hardware.vulkan=mali
 ro.vendor.composer_version=2.3
