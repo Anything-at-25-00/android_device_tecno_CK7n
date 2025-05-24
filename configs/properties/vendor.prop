@@ -11,7 +11,6 @@ ro.vendor.mtk_audio_alac_support=1
 ro.vendor.mtk_audio_ape_support=1
 ro.vendor.mtk_audio_tuning_tool_ver=V1
 ro.vendor.mtk_hifiaudio_support=1
-ro.config.vc_call_vol_steps=11
 
 # Bluetooth
 ro.vendor.bluetooth.a2dp_aac_vbr.is_disabled=true
@@ -88,6 +87,16 @@ ro.vendor.mtk_data_config=1
 # Keymaster
 ro.crypto.volume.filenames_mode=aes-256-cts
 ro.hardware.kmsetkey=trustonic
+
+
+# MediaTek
+ro.soc.manufacturer=Mediatek
+ro.vendor.mediatek.platform=MT6789
+ro.vendor.mediatek.version.branch=alps-mp-s0.mp1
+ro.vendor.mediatek.version.release=alps-mp-s0.mp1.rc-V15.240_reallytek.s0mp1rc.k61v1.64.bsp_P45
+ro.vendor.mgk_name=mgk_64_entry_level_k510
+ro.vendor.mtk_widevine_drm_l1_support=1
+ro.vendor.mtk_prefer_64bit_proc=0
 
 # Neural Networks
 debug.mtk_tflite.target_nnapi=29
