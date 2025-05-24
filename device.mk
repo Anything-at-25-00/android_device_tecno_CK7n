@@ -224,7 +224,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     FrameworkResOverlayPyroath \
-    SystemUIResOverlayPyroath
+    SystemUIResOverlayPyroath \
+    WifiResOverlayPyroath
 
 # Lights
 PRODUCT_PACKAGES += \
