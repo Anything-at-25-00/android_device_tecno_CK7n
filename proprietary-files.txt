@@ -480,7 +480,7 @@ vendor/lib64/mt6789/libmtkcam_ulog.so;SYMLINK=vendor/lib64/libmtkcam_ulog.so
 vendor/lib64/mt6789/libportrait_repair_ppl3_ocl.so;SYMLINK=vendor/lib64/libportrait_repair_ppl3_ocl.so
 vendor/lib64/mt6789/libremosaic_wrapper.so;SYMLINK=vendor/lib64/libremosaic_wrapper.so
 vendor/lib64/mt6789/libsdk_sr.so;SYMLINK=vendor/lib64/libsdk_sr.so
-vendor/lib64/mt6789/libsegmention.so;SYMLINK=vendor/lib64/libsegmention.so
+vendor/lib64/mt6789/libsegmention.so;SYMLINK=vendor/lib64/libsegmention.so;DISABLE_CHECKELF
 vendor/lib64/mt6789/libsegmentionPre.so;SYMLINK=vendor/lib64/libsegmentionPre.so
 vendor/lib64/mt6789/libsmartdetector.so;SYMLINK=vendor/lib64/libsmartdetector.so
 vendor/lib64/mt6789/libst_mobile.so;SYMLINK=vendor/lib64/libst_mobile.so
@@ -1138,10 +1138,10 @@ vendor/lib64/libcodec2_vpp_rs_plugin.so
 vendor/lib64/libformatter.so
 
 # Media (Common)
-vendor/lib/AVCSecureVdecCA_510.so
-vendor/lib/HEVCSecureVdecCA_510.so
-vendor/lib/VP9SecureVdecCA_510.so
-vendor/lib/libAVCSecureVencCA_510.so
+vendor/lib/AVCSecureVdecCA_510.so;DISABLE_CHECKELF
+vendor/lib/HEVCSecureVdecCA_510.so;DISABLE_CHECKELF
+vendor/lib/VP9SecureVdecCA_510.so;DISABLE_CHECKELF
+vendor/lib/libAVCSecureVencCA_510.so;DISABLE_CHECKELF
 vendor/lib/libHEVCdec_sa.ca7.android.so;DISABLE_CHECKELF
 vendor/lib/libadpcmdec_mtk.so
 vendor/lib/libh264dec_customize.so
@@ -1412,9 +1412,9 @@ vendor/bin/mcDriverDaemon
 vendor/etc/init/tee.rc
 vendor/etc/init/trustonic.rc
 vendor/etc/init/vendor.trustonic.tee@1.1-service.rc
-vendor/lib/libTEECommon.so
-vendor/lib/libgz_gp_client.so
-vendor/lib/libgz_uree.so
+vendor/lib/libTEECommon.so;DISABLE_CHECKELF
+vendor/lib/libgz_gp_client.so;DISABLE_CHECKELF
+vendor/lib/libgz_uree.so;DISABLE_CHECKELF
 vendor/lib64/libTEECommon.so
 vendor/lib64/libgz_gp_client.so
 vendor/lib64/libgz_uree.so
