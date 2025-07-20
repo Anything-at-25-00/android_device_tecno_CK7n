@@ -316,6 +316,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     FrameworkResOverlayPyroath \
+    OpenDeltaOverlayPyroath \
     SettingsResOverlayPyroath \
     SettingsProviderOverlayPyroath \
 	  SystemUIResOverlayPyroath \
