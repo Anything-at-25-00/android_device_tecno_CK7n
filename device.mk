@@ -51,6 +51,15 @@ PRODUCT_PACKAGES += \
 # Dalvik configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# Display
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.composer@2.3-service \
+    android.hardware.memtrack-service.mediatek-mali
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@4.0.vendor \
+    android.frameworks.sensorservice@1.0.vendor \
+    libdrm.vendor
+
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
