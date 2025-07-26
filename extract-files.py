@@ -15,7 +15,7 @@ from extract_utils.main import (
 )
 
 blob_fixups: blob_fixups_user_type = {
-    'vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so': blob_fixup()
+    ('vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service', 'vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so'): blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so'),
 }  # fmt: skip
 
