@@ -77,3 +77,6 @@ debug.sf.earlyGl.sf.duration=27600000
 debug.sf.earlyGl.app.duration=20000000
 debug.sf.hwc.min.duration=23000000
 debug.sf.enable_hwc_vds=0
+
+# TEE
+ro.vendor.mtk_trustonic_tee_support=1
