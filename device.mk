@@ -133,7 +133,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0.vendor \
     libhidltransport.vendor \
-    libhwbinder.vendor    
+    libhwbinder.vendor
+
+# IMS
+$(call inherit-product, vendor/mediatek/ims/ims.mk)
 
 # Include GSI keys
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
