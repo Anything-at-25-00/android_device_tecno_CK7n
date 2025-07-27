@@ -16,6 +16,8 @@ from extract_utils.main import (
 
 blob_fixups: blob_fixups_user_type = {
     ('vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service', 'vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so'): blob_fixup()
+        .replace_needed('libhidlbase.so', 'libhidlbase-v32.so')
+        .replace_needed('libbinder.so', 'libbinder-v32.so')
         .replace_needed('libutils.so', 'libutils-v32.so'),
     'vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc': blob_fixup()
         .regex_replace('@1.2-mediatek', '@1.2-mediatek-64b'),
