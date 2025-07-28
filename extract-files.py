@@ -25,7 +25,8 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service', 'vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so'): blob_fixup()
         .replace_needed('libhidlbase.so', 'libhidlbase-v32.so')
         .replace_needed('libbinder.so', 'libbinder-v32.so')
-        .replace_needed('libutils.so', 'libutils-v32.so'),
+        .replace_needed('libutils.so', 'libutils-v32.so')
+        .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
     'vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc': blob_fixup()
         .regex_replace('@1.2-mediatek', '@1.2-mediatek-64b'),
     ('vendor/bin/hw/android.hardware.gnss-service.mediatek', 'vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so'): blob_fixup()
@@ -77,6 +78,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('1.1', '1.2'),
     'vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc': blob_fixup()
         .regex_replace('start', 'enable'),
+    ('vendor/bin/mnld', 'vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so', 'vendor/lib64/mt6789/libaalservice.so', 'vendor/lib64/mt6789/libcam.utils.sensorprovider.so'): blob_fixup()
+        .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
