@@ -103,6 +103,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.6.vendor:64
 
 PRODUCT_PACKAGES += \
+    libcamera_metadata_shim \
     libdng_sdk.vendor        
     
 # Cgroup
