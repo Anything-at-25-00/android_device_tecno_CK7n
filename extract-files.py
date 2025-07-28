@@ -69,6 +69,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libbinder.so', 'libbinder-v32.so')
         .replace_needed('libutils.so', 'libutils-v32.so'),
     'vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so': blob_fixup()
+        .replace_needed('libhidlbase.so', 'libhidlbase-v32.so')
+        .replace_needed('libbinder.so', 'libbinder-v32.so')
         .replace_needed('libutils.so', 'libutils-v32.so')    
         .add_needed('libcamera_metadata_shim.so'),
     'vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml': blob_fixup()
