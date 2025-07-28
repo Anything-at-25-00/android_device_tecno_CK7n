@@ -49,6 +49,7 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libbinder.so', 'libbinder-v32.so')
         .replace_needed('libutils.so', 'libutils-v32.so'),
     'vendor/lib64/hw/hwcomposer.mtk_common.so': blob_fixup()
+        .patchelf_version('0_17_2')
         .add_needed('libprocessgroup_shim.so'),
 }  # fmt: skip
 
