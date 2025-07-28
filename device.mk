@@ -64,6 +64,9 @@ PRODUCT_PACKAGES += \
     audio.usb.default:64
 
 PRODUCT_PACKAGES += \
+    audio_policy.stub \
+    libopus.vendor \
+    audioclient-types-aidl-cpp.vendor \
     libaudioroute.vendor \
     libaudiofoundation.vendor:64 \
     libbluetooth_audio_session:64 \
@@ -73,6 +76,9 @@ PRODUCT_PACKAGES += \
     libdynproc:64 \
     libhapticgenerator:64 \
     libprocessgroup.vendor:64
+
+ PRODUCT_PACKAGES += \
+    MtkInCallService   
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -127,6 +133,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0.vendor \
     android.frameworks.sensorservice@1.0.vendor \
+    android.hardware.graphics.mapper@4.0.vendor \
+    libhwc2on1adapter \
+    libhwc2onfbadapter \
     libdrm.vendor
 
 # DRM
@@ -176,6 +185,8 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hidl.allocator@1.0 \
     android.hidl.base@1.0.vendor \
     android.hidl.allocator@1.0.vendor \
     libhidlmemory.vendor \
@@ -232,6 +243,7 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-V1-ndk_platform.vendor:64 \
     android.hardware.security.secureclock-V1-ndk_platform.vendor:64 \
     android.hardware.security.sharedsecret-V1-ndk_platform.vendor:64 \
+    android.hardware.security.rkp-V3-ndk.vendor \
     libcppbor_external.vendor:64
 
 # Linker
@@ -243,6 +255,7 @@ PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.0.vendor:64 \
     android.hardware.media.c2@1.1.vendor:64 \
     android.hardware.media.c2@1.2.vendor:64 \
+    android.hardware.cas@1.2-service-lazy \
     libcodec2_hidl@1.2.vendor:64 \
     libcodec2_hidl_plugin:64 \
     libcodec2_vndk.vendor:64 \
@@ -430,7 +443,9 @@ PRODUCT_PACKAGES += \
     libbase_shim \
     libbinder-v32 \
     libhidlbase-v32 \
-    libstagefrightfoundation-v33 \
+    libhidlbase_shim \
+    libstagefright_foundation-v33 \
+    libprocessgroup_shim:64 \
     libutils-v32
 
 # USB
