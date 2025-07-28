@@ -64,13 +64,15 @@ PRODUCT_PACKAGES += \
     audio.usb.default:64
 
 PRODUCT_PACKAGES += \
+    libaudioroute.vendor \
     libaudiofoundation.vendor:64 \
     libbluetooth_audio_session:64 \
     libalsautils:64 \
     libnbaio_mono:64 \
     libtinycompress:64 \
     libdynproc:64 \
-    libhapticgenerator:64
+    libhapticgenerator:64 \
+    libprocessgroup.vendor:64
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -104,7 +106,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libcamera_metadata_shim \
-    libdng_sdk.vendor        
+    libdng_sdk.vendor \
+    libexif.vendor \
+    libpiex \
+    libpng.vendor
     
 # Cgroup
 PRODUCT_COPY_FILES += \
@@ -118,6 +123,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
     android.hardware.memtrack-service.mediatek-mali
+
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0.vendor \
     android.frameworks.sensorservice@1.0.vendor \
@@ -159,6 +165,9 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor \
     android.hardware.gnss-V1-ndk.vendor
 
+PRODUCT_PACKAGES += \
+    libcurl.vendor
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service \
@@ -169,6 +178,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0.vendor \
     android.hidl.allocator@1.0.vendor \
+    libhidlmemory.vendor \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder.vendor
@@ -322,10 +332,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3.vendor
 
-# Power | Dummy mtkperf lib
+# Power
 PRODUCT_PACKAGES += \
     libmtkperf_client_vendor \
-    libmtkperf_client
+    libmtkperf_client \
+    libpower.vendor
 
 # Power configurations
 PRODUCT_COPY_FILES += \
@@ -348,6 +359,31 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.3.vendor \
     android.hardware.radio@1.6.vendor
+
+# Required for QPR3
+PRODUCT_PACKAGES += \
+    libexpat.vendor \
+    libunwindstack.vendor \
+    libchrome.vendor:64 \
+    libcurl.vendor \
+    libexif.vendor \
+    libdng_sdk.vendor \
+    liblz4.vendor \
+    libpiex \
+    libexpat.vendor \
+    libpng.vendor \
+    libion.vendor \
+    libui.vendor \
+    libmemunreachable.vendor \
+    libgatekeeper.vendor \
+    libjsoncpp.vendor \
+    libnetutils.vendor \
+    libdumpstateutil.vendor \
+    libruy.vendor \
+    libpcap.vendor \
+    libsqlite.vendor \
+    libutilscallstack.vendor \
+    libziparchive.vendor
 
 # Secure Element
 PRODUCT_PACKAGES += \
