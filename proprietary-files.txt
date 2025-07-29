@@ -1449,6 +1449,14 @@ vendor/etc/thermal/thermal_policy_00.conf
 vendor/etc/thermal/thermal_policy_02.conf
 vendor/etc/thermal/thermal_policy_08.conf
 
+# Tne Engine
+vendor/bin/hw/vendor.tne@1.0-service
+vendor/etc/init/tnev.rc
+vendor/etc/vintf/manifest/manifest_tneengine.xml
+vendor/lib64/libtneclient.so
+vendor/lib64/libtnev.so
+vendor/lib64/vendor.transsion.hardware.tne.tneengine@1.0.so
+
 # Tranlog
 vendor/bin/tranlog
 vendor/bin/tranlogconfig
