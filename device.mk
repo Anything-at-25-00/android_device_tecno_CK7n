@@ -326,6 +326,13 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.millennium
 
+# VNDK
+PRODUCT_PACKAGES += \
+    libbinder-v32 \
+    libhidlbase-v32 \
+    libstagefright_foundation-v32 \
+    libutils-v32
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.transsion
