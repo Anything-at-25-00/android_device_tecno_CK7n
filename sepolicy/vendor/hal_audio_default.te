@@ -8,6 +8,9 @@ allow hal_audio_default sysfs:file { read getattr open };
 allow hal_audio_default aw87xxx_vmax:file { read getattr open };
 allow hal_audio_default sysfs_boot_info:file r_file_perms;
 
+rw_dir_file(hal_audio_default, sysfs_batteryinfo)
+rw_dir_file(hal_audio_default, sysfs_therm)
+
 hal_client_domain(hal_audio_default, hal_power)
 
 set_prop(hal_audio_default, vendor_mtk_audiohal_prop)
