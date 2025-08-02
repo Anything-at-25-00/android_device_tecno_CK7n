@@ -25,3 +25,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-transsion
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceName=CK7n \
     BuildFingerprint=TECNO/CK7n-GL/TECNO-CK7n:14/UP1A.231005.007/250218V1430:user/release-keys
+
+
