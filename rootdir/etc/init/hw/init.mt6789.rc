@@ -4,8 +4,6 @@ import /vendor/etc/init/hw/init.connectivity.rc
 import /vendor/etc/init/hw/init.mt6789.usb.rc
 import /vendor/etc/init/hw/init.project.rc
 import /vendor/etc/init/hw/init.aee.rc
-import /vendor/etc/init/hw/init.volte.rc
-import /vendor/etc/init/hw/init.mal.rc
 import /vendor/etc/init/hw/init.sensor_2_0.rc
 import /vendor/etc/init/hw/init.mt6789.power.rc
 
@@ -16,10 +14,6 @@ import /vendor/etc/init/hw/init.modem.rc
 on init
     # if primary storage is physical, set ro.vold.primary_physical to 1
     # setprop ro.vold.primary_physical 1
-
-     # dex2oat_threads add by dewang.tan 20231227 start
-    setprop persist.vendor.powerhal.dex2oat_threads 0
-     # dex2oat_threads add by dewang.tan 20231227 end
 
 #MD:add XLQYXLQS-5252 for tranfs by xiaoxiang.xiong 20220404 start
 mkdir /tranfs 0771 system system
@@ -42,10 +36,6 @@ mkdir /tranfs 0771 system system
 # mount different fs start
 
 on property:init.svc.vendor.charger=running
-    #MD:delete XLBELHQQS-6425 for cache by xiaoxiang.xiong 20220616 start
-    #exec /system/bin/e2fsck -f -p /dev/block/by-name/cache
-    #mount ext4 /dev/block/by-name/cache /cache rw wait
-    #MD:delete XLBELHQQS-6425 for cache by xiaoxiang.xiong 20220616 end
     chmod 0660 /dev/spm
     chown system system /dev/spm
     chmod 0666 /dev/kmsg
@@ -76,9 +66,6 @@ on property:init.svc.vendor.charger=running
     chown system system /sys/class/leds/red/brightness
     chown system system /sys/class/leds/green/brightness
 
-    # Stop bootprof
-    write /proc/bootprof "0"
-
 # initialize powerHAL when boot is completed
 on property:sys.boot_completed=1
     setprop vendor.mediatek.powerhal.init 1
@@ -87,10 +74,6 @@ on fs
     # mount fstab
     mount_all --early
     exec /system/bin/tune2fs -O has_journal -u 10010 -r 4096 /dev/block/by-name/userdata
-
-on fs
-
-   mount iso9660 loop@/vendor/etc/iAmCdRom.iso /mnt/cd-rom ro
 
 on late-fs
     wait_for_prop hwservicemanager.ready "true"
@@ -623,7 +606,6 @@ on post-fs-data
     chmod 0660 /dev/mtk_dfrc
     chown system graphics /dev/mtk_dfrc
 
-
    #change partition permission
 
     chmod 0640 /mtd@sec_ro
@@ -671,7 +653,6 @@ on post-fs-data
     chown system system /proc/secmem0
 
     chmod 0666 /dev/exm0
-
 
 	#Thermal
 	mkdir /data/vendor/.tp/ 0775 system system
@@ -931,40 +912,6 @@ on property:sys.boot_completed=1
     write /proc/perfmgr/boost_ctrl/cpu_ctrl/boot_freq "-1 -1 -1 -1 -1 -1"
     write /sys/devices/platform/boot_dramboost/dramboost/dramboost 0
 
-#service dpfd /vendor/bin/dpfd
-#	user root
-#	group system media
-
-#
-#  External Modme control related services
-#
-
-#
-#  Modem related services (Begin)
-#
-##Add by T.Zh for ppp daemon
-#service pppd /system/bin/pppd file /data/misc/ppp/ppp_options
-#    user root
-#    disabled
-#    oneshot
-#
-##
-#
-#  Modem related services (End)
-#
-
-#add for power-off alarm
-#service poad /vendor/bin/poad
-#    class main
-#    user system
-#    group system
-#    oneshot
-
-#service BGW /vendor/xbin/BGW
-#	user system
-#	group gps system radio
-#	class main
-
 # Battery info
 on property:persist.vendor.mediatek.fg.disable=1
     write /dev/gauge/FG_daemon_disable 1
@@ -1013,45 +960,9 @@ on property:sys.boot_completed=1
 on property:persist.vendor.mediatek.fast_charging.support=*
     write /sys/devices/platform/charger/fast_chg_indicator ${persist.vendor.mediatek.fast_charging.support}
 
-#SPD: add resmonitor and smartpanel bind small core by rui.fu 20230117 start
-service spd_cpu_set_sh /vendor/bin/init.spd_cpu_set.sh
-    class main
-    user root
-    group root system
-    disabled
-    oneshot
-
-on property:sys.boot_completed=1
-    start spd_cpu_set_sh
-#SPD: add resmonitor and smartpanel bind small core by rui.fu 20230117 end
-
-
-on property:persist.vendor.swapfile_enable=false
-    swapon_all /vendor/etc/fstab.enableswap
-
-on property:persist.vendor.swapfile_enable=true && property:ro.vendor.memfusion2_2.support=false
-    swapon_all /vendor/etc/fstab.enableswap
-
 #SPD: add for watermark_scale_factor at 20230302 start
 on property:sys.boot_completed=1
     write /proc/sys/vm/watermark_scale_factor 200
 #SPD: add for watermark_scale_factor at 20230302 end
-#SPD: add for control dex2oat cpu by fan.feng1 20230619 start
-    write /dev/cpuset/dex2oat/cpus 0-3
-    write /dev/cpuctl/dex2oat/cpu.shares 512
-    setprop persist.vendor.powerhal.dex2oat_threads 4
-#SPD: add for control dex2oat cpu by fan.feng1 20230619 end
-#KERENL: add cgroup customise profiles by chaoquan.li at 20240110 start
-    write /dev/cpuset/foreground-l/cpus 0-6
-    write /dev/cpuset/background-l/cpus 0-1
-    write /dev/cpuctl/foreground-l/cpu.shares 2048
-    write /dev/cpuctl/background-l/cpu.shares 512
-#KERENL: add cgroup customise profiles by chaoquan.li at 20240110 end
 
 
-#SPD: add for memfusion2_2 at 20230926 start
-on property:persist.vendor.swapfile_enable=false
-    swapon_all /vendor/etc/fstab.enableswap
-on property:persist.vendor.swapfile_enable=true && property:ro.vendor.memfusion2_2.support=false
-    swapon_all /vendor/etc/fstab.enableswap
-#SPD: add for memfusion2_2 at 20230926 end
