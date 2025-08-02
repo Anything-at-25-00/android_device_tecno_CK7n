@@ -232,15 +232,6 @@ PRODUCT_PACKAGES += \
     init.sensor_2_0.rc \
     ueventd.mt6789.rc
 
-# Overlays
-PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_PACKAGES += \
-    FrameworkResOverlayPyroath \
-    SettingsResOverlayPyroath \
-    SystemUIResOverlayPyroath \
-    TetheringResOverlayPyroath \
-    WifiResOverlayPyroath
-
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.millennium
@@ -302,6 +293,15 @@ PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp \
     com.android.nfc_extras \
     Tag
+
+# Overlays
+PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_PACKAGES += \
+    FrameworkResOverlayPyroath \
+    SettingsResOverlayPyroath \
+    SystemUIResOverlayPyroath \
+    TetheringResOverlayPyroath \
+    WifiResOverlayPyroath
 
 # Permissions
 PRODUCT_COPY_FILES += \
