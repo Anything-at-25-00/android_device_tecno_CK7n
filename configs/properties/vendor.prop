@@ -121,11 +121,15 @@ debug.hwui.target_cpu_time_percent=30
 ro.incremental.enable=yes
 
 # IMS
+persist.vendor.mdrsra_v2_support=1
 persist.vendor.mtk.volte.enable=1
 persist.vendor.mtk_ct_volte_support=3
 persist.vendor.mtk_dynamic_ims_switch=1
 persist.vendor.mtk_wfc_support=1
+persist.vendor.mtk.volte.enable=1
+persist.vendor.mtk_wfc_support=1
 persist.vendor.viwifi_support=1
+persist.vendor.vonr_setting_support=0
 ro.vendor.md_auto_setup_ims=1
 ro.vendor.mtk_data_config=1
 
@@ -156,8 +160,22 @@ ro.vendor.mgk_name=mgk_64_entry_level_k510
 ro.vendor.mtk_widevine_drm_l1_support=1
 ro.vendor.mtk_prefer_64bit_proc=0
 
-# MTE
-arm64.memtag.process.system_server=off
+# Misc
+ro.vendor.pref_scale_enable_cfg=1
+ro.vendor.rc=/vendor/etc/init/hw/
+
+# MTK Stuff
+persist.vendor.factory.GB2312=no
+ro.limit_cache.support=1
+ro.netflix.bsp_rev=MTK6789-35965-1
+ro.vendor.efuse_writer_enable=1
+ro.vendor.mml.mtk_mml_support=0
+ro.vendor.mtk_aal_support=1
+ro.vendor.mtk_fast_charging_support=1
+ro.vendor.mtk_gwsd_capability=1
+ro.vendor.mtk_mvpu_security_support=0
+ro.vendor.mtk_ovl_bringup=0
+ro.vendor.mtk_wfd_support=1
 
 # MTE
 persist.arm64.memtag.system_server=off
@@ -241,4 +259,11 @@ debug.sf.hwc.min.duration=23000000
 debug.sf.enable_hwc_vds=0
 
 # TEE
+ro.vendor.mtk_svp_on_mtee_support=2
 ro.vendor.mtk_trustonic_tee_support=1
+
+# Wi-Fi
+ro.vendor.wifi.sap.concurrent.iface=ap1
+ro.vendor.wifi.sap.interface=ap0
+ro.vendor.wlan.chrdev=wmt_chrdev_wifi
+ro.vendor.wlan.gen=gen4m_6789
