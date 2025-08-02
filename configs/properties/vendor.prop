@@ -19,6 +19,7 @@ vendor.usbsph.ul.pcm.dump=0
 vendor.usbsph.srcaws.pcm.dump=0
 vendor.streamout.pcm.dump=0
 vendor.streamin.pcm.dump=0
+ro.audio.monitorRotation=true
 
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
