@@ -13,5 +13,8 @@ vendor.fptool.fingerprint::IFptoolFingerprint                                   
 vendor.nxp.nxpnfc::INxpNfc                                                               u:object_r:nxpnfc_hwservice:s0
 vendor.nxp.nxpnfclegacy::INxpNfcLegacy                                                   u:object_r:nxpnfc_hwservice:s0
 
+# TNE
+vendor.transsion.hardware.tne.tneengine::ITne                                  u:object_r:hal_tnev_hwservice:s0
+
 # Wi-Fi
 vendor.transsion.hardware.wifi.hostapd::IHostapd                                    u:object_r:hal_wifi_hostapd_hwservice:s0

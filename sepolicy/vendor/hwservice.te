@@ -6,3 +6,6 @@ type goodix_fingerprint_service, service_manager_type, hwservice_manager_type;
 
 # NXP NFC
 type nxpnfc_hwservice, hwservice_manager_type;
+
+# TNE
+type hal_tnev_hwservice, hwservice_manager_type;
