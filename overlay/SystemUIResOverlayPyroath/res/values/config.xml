@@ -19,4 +19,7 @@
     <dimen name="rounded_corner_content_padding">10dp</dimen>
     <dimen name="status_bar_padding_end">5dp</dimen>
     <dimen name="status_bar_padding_start">16dp</dimen>
+
+    <!-- Determines whether the shell features all run on another thread. -->
+    <bool name="config_enableShellMainThread">true</bool>
 </resources>
