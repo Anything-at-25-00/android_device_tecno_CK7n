@@ -56,6 +56,7 @@
             <name>ITne</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.0::ITne/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.trustonic.tee</name>
