@@ -1,5 +1,79 @@
+# Audio
+persist.vendor.anr.dumpthr=1
+ro.audio.usb.period_us=16000
+ro.config.vc_call_vol_steps=9
+ro.audio.silent=0
+ro.camera.sound.forced=0
+ro.config.media_vol_default=13
+ro.config.alarm_vol_default=13
+ro.config.system_vol_default=15
+
+# Blur
+ro.sf.blurs_are_expensive=1
+ro.surface_flinger.supports_background_blur=1
+
+# Brand
+Build.BRAND=MTK
+
+# Camera
+vendor.camera.tran.nums=1
+
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
+
+# Graphics
+ro.opengles.version=196610
+
+# Iorapd
+iorapd.perfetto.enable=false
+iorapd.readahead.enable=false
+persist.device_config.runtime_native_boot.iorap_readahead_enable=false
+ro.iorapd.enable=false
+
+# Kernel
+ro.kernel.zio=38,108,105,16
+
+# IPO
+sys.ipo.disable=1
+sys.ipo.pwrdncap=2
+
+# Media
+media.stagefright.thumbnail.prefer_hw_codecs=true
+ro.vendor.mtk_flv_playback_support=1
+vendor.mtk_thumbnail_optimization=true
+
+# Memory Optimization
+ro.config.dha_cached_max=32
+ro.config.dha_cached_min=16
+ro.config.per_app_memcg=false
+
+# MTK vendor
+ro.vendor.mtk_omacp_support=1
+ro.vendor.mtk_telephony_add_on_policy=0
+
+# Performance
+ro.mtk_perf_fast_start_win=1
+ro.mtk_perf_response_time=1
+ro.mtk_perf_simple_start_win=1
+security.perf_harden=1
+
+# SLA
+ro.vendor.net.enable_sla=1
+
+# Thermal Management
+persist.thermal_config.mitigation=1
+ro.mtk_thermal_monitor.enabled=true
+
+# Thermal Configuration
+ro.config.thermal_dcs=40
+ro.config.thermal_limit=75
+
+# USB
+ro.sys.usb.bicr=no
+ro.sys.usb.charging.only=yes
+ro.sys.usb.mtp.whql.enable=0
+ro.sys.usb.storage.type=mtp
+ro.usb.connect.keycodes=100,200
 
 # Zygote
 zygote.critical_window.minute=10
