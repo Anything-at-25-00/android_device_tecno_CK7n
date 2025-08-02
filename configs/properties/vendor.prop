@@ -120,6 +120,7 @@ ro.vendor.smvr.p2batch.vga=8
 ro.vendor.smvr.p2batch.hd=4
 debug.sf.enable_egl_image_tracker=0
 debug.sf.treat_170m_as_sRGB=1
+ro.surface_flinger.set_display_power_timer_ms=1000
 
 # Enable virtual A/B compression
 ro.virtual_ab.compression.threads=true
