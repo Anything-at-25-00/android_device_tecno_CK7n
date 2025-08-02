@@ -122,6 +122,7 @@ debug.sf.enable_egl_image_tracker=0
 debug.sf.treat_170m_as_sRGB=1
 ro.surface_flinger.set_display_power_timer_ms=1000
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
+ro.surface_flinger.enable_frame_rate_override=false
 
 # Enable virtual A/B compression
 ro.virtual_ab.compression.threads=true
