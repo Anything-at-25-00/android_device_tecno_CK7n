@@ -242,6 +242,13 @@ vendor.mtk.vdec.waitkeyframeforplay=9
 vendor.media.omx=0
 
 # Power
+persist.vendor.iomanager.dirty=1
+persist.vendor.iomanager.switch=1
+persist.vendor.pnpmgr.enable=1
+persist.vendor.pnpmgr.gamemode.enable=1
+persist.vendor.pnpmgr.gamerecord.enable=1
+ro.vendor.powerhal.gsi_watermark=500
+ro.vendor.powerhal_fling_mode_support=1
 ro.vendor.perf.scroll_opt=true
 vendor.perf.framepacing.enable=1
 
