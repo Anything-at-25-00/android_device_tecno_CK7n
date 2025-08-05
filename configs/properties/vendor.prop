@@ -147,6 +147,9 @@ persist.vendor.sys.mtkaal.function=0
 # Enable virtual A/B compression
 ro.virtual_ab.compression.threads=true
 
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # Gatekeeper
 ro.hardware.gatekeeper=trustonic
 
