@@ -1239,6 +1239,10 @@ vendor/lib64/vendor.mediatek.hardware.neuropilot.agent@1.1.so
 vendor/lib64/vendor.mediatek.hardware.neuropilot.agent@1.2.so
 
 # NFC
+vendor/etc/libnfc-nci.conf
+vendor/etc/libnfc-nxp.conf
+vendor/etc/libnfc-slm.conf
+vendor/libnfc-nxp_RF.conf
 vendor/etc/init/init.nxp.nfc.rc
 vendor/lib64/libpn557_fw.so
 
