@@ -158,6 +158,9 @@ PRODUCT_PACKAGES += \
     libhwc2onfbadapter:64 \
     libdrm.vendor:64
 
+PRODUCT_PACKAGES += \
+    ANGLE
+
 # Dolby
 $(call inherit-product, vendor/sony/dolby/setup.mk)
 
