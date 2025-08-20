@@ -319,6 +319,7 @@ PRODUCT_PACKAGES += \
     SettingsProviderOverlayPyroath \
     SystemUIResOverlayPyroath \
     TetheringResOverlayPyroath \
+    UpdaterOverlayRozen \
     WifiResOverlayPyroath
 
 # Lineage-Specific Overlays

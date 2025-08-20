@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "UpdaterOverlayPyroath",
+    product_specific: true,
+}
