@@ -263,4 +263,5 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.log.tag.GED=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.hwcomposer=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.netd=$(VENDOR_LOG_LEVEL) \
-    persist.log.tag.HWUI=$(VENDOR_LOG_LEVEL)
+    persist.log.tag.HWUI=$(VENDOR_LOG_LEVEL) \
+    persist.log.tag.lights_service_transsion_rust=$(VENDOR_LOG_LEVEL)
