@@ -402,26 +402,6 @@
         <fqname>@1.0::ITranDataCenter/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.transsion.hardware.tranlog</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ITranLog</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ITranLog/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.transsion.hardware.tranlogconfig</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ITranLogConfig</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ITranLogConfig/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.transsion.performance.sched</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
