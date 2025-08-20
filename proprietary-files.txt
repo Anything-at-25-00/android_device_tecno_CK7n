@@ -1461,15 +1461,9 @@ vendor/lib64/libtnev.so
 vendor/lib64/vendor.transsion.hardware.tne.tneengine@1.0.so
 
 # Tranlog
-vendor/bin/tranlog
-vendor/bin/tranlogconfig
-vendor/etc/init/init.tranlog.rc
-vendor/etc/init/init.tranlogconfig.rc
 vendor/lib/libtranlog.so
 vendor/lib64/libminizip.so
 vendor/lib64/libtranlog.so
-vendor/lib64/vendor.transsion.hardware.tranlog@1.0.so
-vendor/lib64/vendor.transsion.hardware.tranlogconfig@1.0.so
 
 # Wi-Fi
 vendor/bin/wlan_assistant
