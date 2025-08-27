@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_CK7n.mk
+    $(LOCAL_DIR)/yaap_CK7n.mk
