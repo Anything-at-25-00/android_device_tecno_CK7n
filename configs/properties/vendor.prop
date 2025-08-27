@@ -65,15 +65,10 @@ ro.vendor.camera_tran_fake_stereo_support=1
 ro.vendor.camera_tran_hal_server_support=1
 ro.vendor.mtk_cam_security_support=0
 ro.vendor.mtk_camera_app_version=3
-ro.vendor.tran.midtest.camera_als_ic=alspdt17
-ro.vendor.tran.midtest.dual_camera_dummy=1
-ro.vendor.tran.midtest.dual_camera_support=1
-ro.vendor.tran.midtest.first_dummy_cameraID=2
-ro.vendor.tran.midtest.front_two_camera_dummy=1
-ro.vendor.tran.midtest.second_dummy_cameraID=0
 vendor.camera.mdp.cz.enable=1
 vendor.camera.mdp.dre.enable=1
 vendor.mtk.camera.app.fd.video=1
+ro.vendor.camkit_enabled=1
 
 # Charger
 ro.vendor.mtk_fast_charging_support=1
