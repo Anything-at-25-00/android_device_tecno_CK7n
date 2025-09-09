@@ -515,6 +515,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libwifi-hal-wrapper:64 \
     wpa_supplicant \
+    lib_driver_cmd_mt66xx \
     hostapd \
     android.hardware.wifi-service \
     libkeystore-wifi-hidl:64 \
