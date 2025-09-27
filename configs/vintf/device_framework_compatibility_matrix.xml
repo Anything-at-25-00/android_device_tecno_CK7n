@@ -18,26 +18,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.transsion.hardware.trandatacenter</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ITranDataCenter</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ITranDataCenter/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.transsion.performance.sched</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ITransSched</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ITransSched/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.transsion.hardware.tne.tneengine</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
