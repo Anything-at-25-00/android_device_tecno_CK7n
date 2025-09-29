@@ -179,7 +179,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
 # FastbootD
 PRODUCT_PACKAGES += \
-    android.hardware.fastboot@1.1-impl-mock:64 \
+    android.hardware.fastboot-service.example_recovery \
     fastbootd:64
 
 # Fingerprint
