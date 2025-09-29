@@ -166,10 +166,10 @@ $(call inherit-product, vendor/sony/dolby/setup.mk)
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm-service.clearkey:64
+    com.android.hardware.drm.clearkey
 
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4.vendor:64
+    android.hardware.drm@1.4.vendor
 
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
