@@ -76,8 +76,6 @@ on fs
     exec /system/bin/tune2fs -O has_journal -u 10010 -r 4096 /dev/block/by-name/userdata
 
 on late-fs
-    wait_for_prop hwservicemanager.ready "true"
-
     mount_all --late
 
 on post-fs
