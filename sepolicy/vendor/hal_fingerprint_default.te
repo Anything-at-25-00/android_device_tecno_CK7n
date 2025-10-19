@@ -10,6 +10,10 @@ allow hal_fingerprint_default vndbinder_device:chr_file { ioctl read write getat
 allow hal_fingerprint_default vendor_gf_data_file:dir create_dir_perms;
 allow hal_fingerprint_default vendor_gf_data_file:file create_file_perms;
 allow hal_fingerprint_default property_socket:sock_file write;
+add_hwservice(hal_fingerprint_default, goodix_fingerprint_service)
+
+binder_call(hal_fingerprint_default, goodix_fingerprint_vndservice)
+set_prop(hal_fingerprint_default, system_goodix_prop)
 
 vndbinder_use(hal_fingerprint_default)
 hwbinder_use(hal_fingerprint_default)
