@@ -243,6 +243,20 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.7.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 
+# Fingerprint
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-mediatek
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.3-service.transsion
+vendor/etc/vintf/manifest/manifest.xml:vendor/etc/vintf/manifest/manifest_goodix.xml
+vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service-mediatek.xml
+vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.3-service.transsion.xml
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-mediatek.rc
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.3-service.transsion.rc
+vendor/etc/init/vendor.goodix.rc
+vendor/lib64/hw/gf_fingerprint.default.so;FIX_SONAME
+vendor/lib64/libgf_hal.so
+vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
+vendor/lib64/vendor.mediatek.hardware.biometrics.fingerprint@2.1.so
+
 # Firmware
 vendor/firmware/BT_FW.cfg
 vendor/firmware/Conf_MultipleTest.ini
