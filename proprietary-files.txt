@@ -760,6 +760,8 @@ vendor/lib64/libFy-3A-Core.so
 vendor/lib64/libFy-3A-Param.so
 vendor/lib64/libMegviiHum.so
 vendor/lib64/libSQLiteModule_VER_ALL.so
+vendor/lib64/libTranExtImgThread.so
+vendor/lib64/libTranGoldWaterMark.so
 vendor/lib64/libTranVideoFilter.so
 vendor/lib64/libaibld.so
 vendor/lib64/libanc_hdr.so
@@ -801,6 +803,7 @@ vendor/lib64/libmtkcam_fdWarpConvert.so
 vendor/lib64/libmtkcam_pipelinepolicy-aov.so
 vendor/lib64/libmtkisp_metadata.so
 vendor/lib64/libmtkisp_metadata_v2.so
+vendor/lib64/libpixelflinger.so
 vendor/lib64/libremosaiclib.so
 vendor/lib64/librmsclib1.so
 vendor/lib64/libscltm.so
@@ -808,6 +811,7 @@ vendor/lib64/libstfaceunlockppl.so
 vendor/lib64/libtrancamJsonConvertor.so
 vendor/lib64/libtrancam_filelockmgr.so
 vendor/lib64/libwatermark.so
+vendor/lib64/libvideofilter_cl_64.so
 vendor/lib64/s5k2lqsx_mipi_raw_IdxMgr.so
 vendor/lib64/s5k4h7_mipi_raw_IdxMgr.so
 vendor/lib64/vendor.mediatek.hardware.camera.atms@1.0.so
