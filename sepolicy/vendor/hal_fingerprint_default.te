@@ -3,7 +3,6 @@ allow hal_fingerprint_default input_device:dir r_dir_perms;
 allow hal_fingerprint_default mnt_vendor_file:dir search;
 allow hal_fingerprint_default persist_data_file:dir create_dir_perms;
 allow hal_fingerprint_default persist_data_file:file create_file_perms;
-allow hal_fingerprint_default self:netlink_kobject_uevent_socket { read create bind setopt };
 allow hal_fingerprint_default sysfs_fp_name_path:dir r_dir_perms;
 allow hal_fingerprint_default sysfs_fp_name_path:file rw_file_perms;
 allow hal_fingerprint_default vndbinder_device:chr_file { ioctl read write getattr lock append map open watch watch_reads };
@@ -11,6 +10,7 @@ allow hal_fingerprint_default vendor_gf_data_file:dir create_dir_perms;
 allow hal_fingerprint_default vendor_gf_data_file:file create_file_perms;
 allow hal_fingerprint_default property_socket:sock_file write;
 add_hwservice(hal_fingerprint_default, goodix_fingerprint_service)
+allow hal_fingerprint_default self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
 
 binder_call(hal_fingerprint_default, goodix_fingerprint_vndservice)
 set_prop(hal_fingerprint_default, system_goodix_prop)
