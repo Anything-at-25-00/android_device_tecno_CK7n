@@ -4,4 +4,6 @@ allow hal_health_default sysfs_batteryinfo:file { getattr open read };
 allow hal_health_default sysfs_batteryinfo:dir search;
 allow hal_health_default sysfs_power_supply:file { getattr open read };
 allow hal_health_default sysfs_power_supply:dir search;
+allow hal_health_default sysfs_tran_auto_test:dir search;
+allow hal_health_default sysfs_tran_auto_test:file { getattr open read };
 allow hal_health_default sysfs:file read;
