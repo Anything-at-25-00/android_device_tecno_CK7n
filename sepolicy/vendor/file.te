@@ -11,6 +11,7 @@ type storage_dbg_data_file, file_type, core_data_file_type, data_file_type;
 # Fingerprint
 type sysfs_fp_name_path, fs_type, sysfs_type;
 type vendor_gf_data_file, file_type, data_file_type;
+type proc_fingerprint_status, fs_type, proc_type, sysfs_type;
 
 # NFC
 type nfc_vendor_data_file, file_type, data_file_type;
