@@ -1,4 +1,4 @@
 runtime_resource_overlay {
     name: "SystemUIResOverlayPyroath",
-    vendor: true
+    vendor: true,
 }
