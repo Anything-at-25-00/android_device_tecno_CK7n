@@ -185,7 +185,7 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1.vendor:64 \
-	  android.hardware.biometrics.fingerprint@2.3.vendor:64
+    android.hardware.biometrics.fingerprint@2.3.vendor:64
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -250,7 +250,7 @@ $(call inherit-product-if-exists, vendor/JamesDSP/config.mk)
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.millennium
-    
+
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/mtk-tpd.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/mtk-tpd.kl
@@ -318,14 +318,14 @@ PRODUCT_PACKAGES += \
     FrameworkResOverlayPyroath \
     SettingsResOverlayPyroath \
     SettingsProviderOverlayPyroath \
-	  SystemUIResOverlayPyroath \
+    SystemUIResOverlayPyroath \
     TetheringResOverlayPyroath \
     WifiResOverlayPyroath
 
 # Lineage-Specific Overlays
 PRODUCT_PACKAGES += \
-	ApertureOverlay
-    
+    ApertureOverlay
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -474,7 +474,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/mediatek \
     hardware/mediatek/libmtkperf_client \
-		hardware/millennium \
+    hardware/millennium \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/google/interfaces \
     hardware/google/pixel
@@ -482,10 +482,10 @@ PRODUCT_SOONG_NAMESPACES += \
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.mediatek
-    
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
-    
+
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.mediatek
@@ -520,7 +520,7 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     libkeystore-wifi-hidl:64 \
     libkeystore-engine-wifi-hidl:64
-    
+
 PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.config@1.0.vendor:64 \
     android.hardware.tetheroffload.control@1.0.vendor:64 \
