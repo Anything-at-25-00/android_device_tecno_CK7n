@@ -1131,10 +1131,10 @@ vendor/lib64/libcodec2_vpp_rs_plugin.so
 vendor/lib64/libformatter.so
 
 # Media (Common)
-vendor/lib/AVCSecureVdecCA_510.so;DISABLE_CHECKELF
-vendor/lib/HEVCSecureVdecCA_510.so;DISABLE_CHECKELF
-vendor/lib/VP9SecureVdecCA_510.so;DISABLE_CHECKELF
-vendor/lib/libAVCSecureVencCA_510.so;DISABLE_CHECKELF
+vendor/lib/AVCSecureVdecCA_510.so
+vendor/lib/HEVCSecureVdecCA_510.so
+vendor/lib/VP9SecureVdecCA_510.so
+vendor/lib/libAVCSecureVencCA_510.so
 vendor/lib/libHEVCdec_sa.ca7.android.so;DISABLE_CHECKELF
 vendor/lib/libh264dec_customize.so
 vendor/lib/libh264dec_sa.ca7.so;DISABLE_CHECKELF
